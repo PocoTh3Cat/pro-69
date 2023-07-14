@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import * as Permissions from "expo-permissions";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
+
 export default class TransactionScreen extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +35,7 @@ export default class TransactionScreen extends Component {
     this.setState({
       scannedData: data,
       domState: "normal",
-      scanned: true
+      scanned: true,
     });
   };
 
